@@ -1,0 +1,92 @@
+- Device platform: armeabi-v7a
+- Installing: 31.1 (31100)
+Input type: RawFile, payload: <input>
+- Copying image to cache
+- Unpacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [10273217]
+RAMDISK_SZ      [7520412]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+OS_VERSION      [10.0.0]
+OS_PATCH_LEVEL  [2021-02]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true vmalloc=300M loop.max_part=7 printk.devkmsg=on androidboot.hab.csv=23 androidboot.hab.product=channel androidboot.hab.cid=50 buildvariant=user veritykeyid=id:b640f6ee9102b88daa3450b13ef25fc9eb143d63]
+CHECKSUM        [c139a969244cf18bc0816f7192d76294951f2a9f000000000000000000000000]
+KERNEL_DTB_SZ   [304833]
+ZIMAGE_KERNEL
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+AVB1_SIGNED
+Loading cpio: [ramdisk.cpio]
+- Checking ramdisk status
+- Stock boot image detected
+- Patching ramdisk
+- Pre-init storage partition: persist
+Loading cpio: [ramdisk.cpio]
+Add file [init] (100750)
+Create directory [overlay.d] (0750)
+Create directory [overlay.d/sbin] (0750)
+Add file [overlay.d/sbin/magisk.xz] (100644)
+Add file [overlay.d/sbin/init-ld.xz] (100644)
+Patch with flag KEEPVERITY=[true] KEEPFORCEENCRYPT=[true]
+Loading cpio: [ramdisk.cpio.orig]
+Backup [init] -> [.backup/init]
+Record new entry: [overlay.d] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/init-ld.xz] -> [.backup/.rmlist]
+Record new entry: [overlay.d/sbin/magisk.xz] -> [.backup/.rmlist]
+Create directory [.backup] (0000)
+Add file [.backup/.magisk] (100000)
+Dumping cpio: [ramdisk.cpio]
+Loading dtbs from [kernel_dtb]
+Loading dtbs from [kernel_dtb]
+Failed to patch
+Failed to patch
+Failed to patch
+Patch @ 0x01578614 [736B69705F696E697472616D667300] -> [77616E745F696E697472616D667300]
+- Repacking boot image
+Parsing boot image: [/data/user_de/0/com.topjohnwu.magisk/install/boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [10273217]
+RAMDISK_SZ      [7520412]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+OS_VERSION      [10.0.0]
+OS_PATCH_LEVEL  [2021-02]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true vmalloc=300M loop.max_part=7 printk.devkmsg=on androidboot.hab.csv=23 androidboot.hab.product=channel androidboot.hab.cid=50 buildvariant=user veritykeyid=id:b640f6ee9102b88daa3450b13ef25fc9eb143d63]
+CHECKSUM        [c139a969244cf18bc0816f7192d76294951f2a9f000000000000000000000000]
+KERNEL_DTB_SZ   [304833]
+ZIMAGE_KERNEL
+KERNEL_FMT      [gzip]
+RAMDISK_FMT     [gzip]
+AVB1_SIGNED
+Repack to boot image: [new-boot.img]
+HEADER_VER      [1]
+KERNEL_SZ       [10238977]
+RAMDISK_SZ      [7737209]
+SECOND_SZ       [0]
+RECOV_DTBO_SZ   [0]
+OS_VERSION      [10.0.0]
+OS_PATCH_LEVEL  [2021-02]
+PAGESIZE        [2048]
+NAME            []
+CMDLINE         [console=ttyMSM0,115200,n8 androidboot.console=ttyMSM0 androidboot.hardware=qcom user_debug=30 msm_rtb.filter=0x237 ehci-hcd.park=3 androidboot.bootdevice=7824900.sdhci lpm_levels.sleep_disabled=1 earlycon=msm_hsl_uart,0x78af000 androidboot.usbconfigfs=true vmalloc=300M loop.max_part=7 printk.devkmsg=on androidboot.hab.csv=23 androidboot.hab.product=channel androidboot.hab.cid=50 buildvariant=user veritykeyid=id:b640f6ee9102b88daa3450b13ef25fc9eb143d63]
+CHECKSUM        [ada1bcece877a5c2b81a1b888ce49fa7c484e886000000000000000000000000]
+
+****************************
+ Output file is written to 
+ /storage/emulated/0/Download/magisk_patched-31100_a5WiD.img 
+****************************
+cp: can't preserve ownership of 'bootctl': Operation not permitted
+cp: can't preserve ownership of 'busybox': Operation not permitted
+cp: can't preserve ownership of 'init-ld': Operation not permitted
+cp: can't preserve ownership of 'magisk': Operation not permitted
+cp: can't preserve ownership of 'magiskboot': Operation not permitted
+cp: can't preserve ownership of 'magiskinit': Operation not permitted
+cp: can't preserve ownership of 'magiskpolicy': Operation not permitted
+- All done!
